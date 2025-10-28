@@ -2,7 +2,7 @@ import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from "react-router";
 import App from './App.jsx'
 
-import './index.css'
+import './index.scss'
 
 const root = document.getElementById("root");
 
