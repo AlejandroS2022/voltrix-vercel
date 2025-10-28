@@ -1,0 +1,30 @@
+Button{
+    &.button-base{
+        width: 100%;
+        background-color: $button-color;
+        box-shadow: 0px -0.5px 0px 0.2px gray;
+        border-radius: 8px;
+        text-transform: capitalize;
+        font-size: 16px;
+        display: inline-flex;
+        gap: 15px;
+        height: 48px;
+
+        &:hover{
+            box-shadow: 0px -0.5px 0px 1px gray;       
+        }
+        img{
+            width: 25px;
+            height: 25px;
+            padding: 0;
+        }
+    }
+    &.button-color{
+        width: 100%;
+        font-size: 16px;
+        background-color: $color-blue;
+        color: $bg-color;
+        height: 48px;
+        text-transform: capitalize;
+    }
+}

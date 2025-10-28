@@ -1,8 +1,7 @@
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from "react-router";
 import App from './App.jsx'
-
-import './index.scss'
+import './assets/styles/index.scss'
 
 const root = document.getElementById("root");
 
