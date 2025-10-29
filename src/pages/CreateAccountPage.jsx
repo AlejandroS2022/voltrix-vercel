@@ -1,13 +1,10 @@
 import ChipsOutline from '../components/ui/buttons/ChipsOutline';
-import LoginContent from '../components/modules/LoginContent';
 import FooterLogin from '../components/layouts/FooterLogin';
+import CreateAccount from '../components/modules/CreateAccount';
 import ButtonsRegister from '../components/modules/ButtonsRegister';
 import ButtonColor from '../components/ui/buttons/ButtonColor';
 
-import { Link } from 'react-router-dom';
-
-
-const TradingLogin = () => {
+const CreateAccountPage = () => {
   return (
     <div className="login-container">
         <div className="login-container__left">
@@ -26,19 +23,14 @@ const TradingLogin = () => {
                 <img src="images/logoWhite.png"/>
                 <ButtonsRegister></ButtonsRegister>
                 <hr/>
-                <LoginContent></LoginContent>
-                <ButtonColor content='Log in'></ButtonColor>
+                <CreateAccount></CreateAccount>
+                <ButtonColor content='Create Account' src="#"></ButtonColor>
                 <p>By logging in, you agree to follow our <a href="#" className='color-link'>terms of service</a></p>
-                <p>
-                    <Link to="/Forgot-password" className='color-link'>
-                        Forgot password?
-                    </Link>
-            </p>
             </div>
-            <FooterLogin content="Don't have an account?" redirectText="Create Account" src="/Create-account"></FooterLogin>
+            <FooterLogin content="Already have an account?" redirectText="Log in" src="/"></FooterLogin>
         </div>
     </div>
   );
 };
 
-export default TradingLogin;
+export default CreateAccountPage;

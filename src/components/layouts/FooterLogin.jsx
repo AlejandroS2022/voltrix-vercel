@@ -1,9 +1,9 @@
-const FooterLogin = () => {
+const FooterLogin = ({content, redirectText, src}) => {
   return (
     <>
     <div className="footer-content">
         <hr />
-        <p>Don't have an account? <a href="#" className='color-link'>Sign up</a></p>
+        <p>{content}&nbsp;<a href={src} className='color-link'>{redirectText}</a></p>
     </div>
     </>
   );

@@ -1,4 +1,5 @@
-import InputBase from '../../components/ui/inputs/InputBase';
+import InputBase from '../ui/inputs/InputBase';
+import LoginContent from './LoginContent';
 
 const CreateAccount = () => {
   return (
@@ -7,6 +8,7 @@ const CreateAccount = () => {
             <InputBase label='First Name'></InputBase>
             <InputBase label='Last Name'></InputBase>
         </div>
+        <LoginContent></LoginContent>
     </>
   );
 };

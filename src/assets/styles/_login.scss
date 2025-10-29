@@ -60,5 +60,19 @@
             width: 100%;
             gap: 24px;
         }
+        &__password{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            gap: 24px;
+
+            &-title{
+                color: white;
+                font-weight: 400;
+            }
+            &-title, &-subtitle{
+                margin: 0;
+            }
+        }
     }
 }

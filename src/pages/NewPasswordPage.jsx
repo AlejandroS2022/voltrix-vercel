@@ -1,13 +1,10 @@
 import ChipsOutline from '../components/ui/buttons/ChipsOutline';
-import LoginContent from '../components/modules/LoginContent';
 import FooterLogin from '../components/layouts/FooterLogin';
-import ButtonsRegister from '../components/modules/ButtonsRegister';
+import NewPassword from '../components/modules/NewPassword';
 import ButtonColor from '../components/ui/buttons/ButtonColor';
 
-import { Link } from 'react-router-dom';
 
-
-const TradingLogin = () => {
+const NewPasswordPage = () => {
   return (
     <div className="login-container">
         <div className="login-container__left">
@@ -24,16 +21,14 @@ const TradingLogin = () => {
         <div className="login-container__right">
             <div className='content-center'>
                 <img src="images/logoWhite.png"/>
-                <ButtonsRegister></ButtonsRegister>
-                <hr/>
-                <LoginContent></LoginContent>
-                <ButtonColor content='Log in'></ButtonColor>
-                <p>By logging in, you agree to follow our <a href="#" className='color-link'>terms of service</a></p>
-                <p>
-                    <Link to="/Forgot-password" className='color-link'>
-                        Forgot password?
-                    </Link>
-            </p>
+                <NewPassword 
+                    passwordTitle='Set a new password' 
+                    passwordSubtitle='Create a new password. Ensure it differs from previous ones for security' 
+                    passwordLabel='Password'
+                    passwordLabelConfirm='Confirm password'
+                >
+                </NewPassword>
+                <ButtonColor content='Resset Password' src='/Verify-code'></ButtonColor>
             </div>
             <FooterLogin content="Don't have an account?" redirectText="Create Account" src="/Create-account"></FooterLogin>
         </div>
@@ -41,4 +36,4 @@ const TradingLogin = () => {
   );
 };
 
-export default TradingLogin;
+export default NewPasswordPage;

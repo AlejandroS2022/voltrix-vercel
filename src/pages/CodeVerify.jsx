@@ -1,13 +1,10 @@
 import ChipsOutline from '../components/ui/buttons/ChipsOutline';
-import LoginContent from '../components/modules/LoginContent';
 import FooterLogin from '../components/layouts/FooterLogin';
-import ButtonsRegister from '../components/modules/ButtonsRegister';
+import ForgotPassword from '../components/modules/ForgotPassword';
 import ButtonColor from '../components/ui/buttons/ButtonColor';
 
-import { Link } from 'react-router-dom';
 
-
-const TradingLogin = () => {
+const CodeVerify = () => {
   return (
     <div className="login-container">
         <div className="login-container__left">
@@ -24,21 +21,18 @@ const TradingLogin = () => {
         <div className="login-container__right">
             <div className='content-center'>
                 <img src="images/logoWhite.png"/>
-                <ButtonsRegister></ButtonsRegister>
-                <hr/>
-                <LoginContent></LoginContent>
-                <ButtonColor content='Log in'></ButtonColor>
-                <p>By logging in, you agree to follow our <a href="#" className='color-link'>terms of service</a></p>
-                <p>
-                    <Link to="/Forgot-password" className='color-link'>
-                        Forgot password?
-                    </Link>
-            </p>
+                <ForgotPassword 
+                    passwordTitle='Check you email' 
+                    passwordSubtitle='We sent a reset link to you@example.com enter 5 digit code that mentioned in the email' 
+                    passwordLabel='Enter code'
+                >
+                </ForgotPassword>
+                <ButtonColor content='Verify Code' src='/New-password'></ButtonColor>
             </div>
-            <FooterLogin content="Don't have an account?" redirectText="Create Account" src="/Create-account"></FooterLogin>
+            <FooterLogin content="Haven’t got the email yet?" redirectText="Resend email" src="/"></FooterLogin>
         </div>
     </div>
   );
 };
 
-export default TradingLogin;
+export default CodeVerify;
