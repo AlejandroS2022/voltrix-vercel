@@ -23,6 +23,10 @@
             .content-center{
                 width: auto;
             }
+            &__create-account{
+                flex-direction: column;
+                gap: 0;
+            }
         }
     }
 }
