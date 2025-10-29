@@ -1,0 +1,10 @@
+.MuiChip-outlined.chip-outline{
+    height: 48px;
+    border-radius: 360px;
+
+    span{
+        color: $text-white;
+        font-size: 18px;
+        padding: 6px 20px;
+    }
+}
