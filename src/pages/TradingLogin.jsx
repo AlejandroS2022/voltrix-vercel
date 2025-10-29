@@ -1,30 +1,36 @@
-
+import ChipsOutline from '../components/ui/buttons/ChipsOutline';
+import LoginContent from '../components/layouts/LoginContent';
 import ButtonBase from '../components/ui/buttons/ButtonBase';
-import InputBase from '../components/ui/inputs/InputBase';
-import CheckboxBase from '../components/ui/checkbox/CheckboxBase';
-import ButtonColor from '../components/ui/buttons/ButtonColor';
 import FooterLogin from '../components/layouts/FooterLogin';
+import CreateAccount from '../components/layouts/CreateAccount';
 
 
 const TradingLogin = () => {
   return (
     <div className="login-container">
         <div className="login-container__left">
-            <h1>hola como estas</h1>
+            <div className='bg-shadow'>
+                <h1 className='login-container__left-title'>Navigate the Markets with Confidence</h1>
+                <div className='login-container__left-chips'>
+                    <ChipsOutline content='Advanced Technical Analysis/Charting Tools'></ChipsOutline>
+                    <ChipsOutline content='Customizable UI for Your Trading Style'></ChipsOutline>
+                    <ChipsOutline content='Customer Support'></ChipsOutline>
+                    <ChipsOutline content='Community Feeds'></ChipsOutline>
+                </div>
+            </div>
         </div>    
         <div className="login-container__right">
             <div className='content-center'>
-                <img src="images/logo.png"/>
+                <img src="images/logoWhite.png"/>
                 <div className='login-container__right__buttons'>
                     <ButtonBase content='Sign up with Google' src="images/Google-logo.svg"></ButtonBase>
                     <ButtonBase content='Sign up with Facebook' src="images/Facebook-logo.svg"></ButtonBase>
                 </div>
-                <hr className='hr-style'/>
-                <InputBase label='Email Address'></InputBase>
-                <InputBase label='Password' HelperText='At least 8 characters, with numbers and symbols.'></InputBase>
-                <CheckboxBase label="Remember this device"></CheckboxBase>
-                <ButtonColor content='Log in'></ButtonColor>
-                <p>By logging in, you agree to follow our <a href="#">terms of service</a></p>
+                <hr/>
+                <CreateAccount></CreateAccount>
+                <LoginContent></LoginContent>
+                <p>By logging in, you agree to follow our <a href="#" className='color-link'>terms of service</a></p>
+                <p><a href="#" className='color-link'>Forgot password?</a></p>
             </div>
             <FooterLogin></FooterLogin>
         </div>

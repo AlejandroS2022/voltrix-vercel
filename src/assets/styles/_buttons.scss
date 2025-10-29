@@ -25,6 +25,8 @@ Button{
         background-color: $color-blue;
         color: $bg-color;
         height: 48px;
+        border-radius: 8px;
         text-transform: capitalize;
+        margin-bottom: 16px;
     }
 }

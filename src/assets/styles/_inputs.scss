@@ -13,4 +13,11 @@
     text-align: start;
     width: 100%;
     margin: 14px 0;
+
+    .MuiTypography-root{
+        color: white;
+    }
+}
+.MuiButtonBase-root.checkbox-color{
+    color: $text-color-secondary;
 }

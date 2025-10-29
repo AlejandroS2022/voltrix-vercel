@@ -6,7 +6,7 @@ const CheckboxBase = ({label}) => {
   return (
     <>
     <div className='checkbox-field'>
-        <FormControlLabel control={<Checkbox defaultChecked />} label={label} />
+        <FormControlLabel control={<Checkbox defaultChecked className='checkbox-color'/>} label={label} />
     </div>
     </>
   );

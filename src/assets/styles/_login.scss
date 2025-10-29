@@ -8,48 +8,57 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+
+        &-title{
+            padding-top: 64px;
+            font-size: 70px;
+            color: $text-white;
+            margin: 0px 0px 20px 0;
+            line-height: 70px;
+        }
+        .bg-shadow{
+            background-color: rgba(0, 0, 0, 0.5);
+            width: auto;
+            height: 100%;
+            padding: 0px 64px;
+        }
+        &-chips{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: flex-start;
+        }
     }
     &__right{
-     color: $text-color;
-     padding: 54px 40px;
-     display: grid;
-     align-content: space-between;
-     justify-content: center;
+        color: $text-color;
+        padding: 68px 40px;
+        display: grid;
+        align-content: space-between;
+        justify-content: center;
 
-     .content-center{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 550px;
-     }
-     img{
-      width: 180px;
-      padding-bottom: 80px;
-     }
-     &__buttons{
-        display: flex;
-        gap: 16px;
-        width: 100%;
-        padding-bottom: 22px;
-     }
-     .hr-style{
-        width: 100%;
-        border-color: $border-color;
-        &::after {
-            content: 'or';
-            position: absolute;
-            margin-top: -8px;
-            left: 74.5%;
-            padding: 0 10px; 
-            background: $bg-color; 
-            color: $text-color-secondary; 
-            font-size: 14px;
-            z-index: 2; 
+        .content-center{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 550px;
         }
-     }
-     hr{
-        width: 100%;
-        border-color: $border-color;
-     }
+        img{
+        padding-bottom: 80px;
+        }
+        &__buttons{
+            display: flex;
+            gap: 16px;
+            width: 100%;
+            padding-bottom: 22px;
+        }
+        hr{
+            width: 100%;
+            border-color: $border-color;
+        }
+        &__create-account{
+            display: flex;
+            width: 100%;
+            gap: 24px;
+        }
     }
 }

@@ -2,6 +2,8 @@
 @import "../styles/login";
 @import "../styles/buttons";
 @import "../styles/inputs";
+@import "../styles/chips";
+@import "../styles/queries";
 
 body {
   font-family: $font-family;
@@ -15,4 +17,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.color-link{
+  color: $color-blue;
 }

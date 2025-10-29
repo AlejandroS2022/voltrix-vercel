@@ -1,0 +1,28 @@
+@media (max-width: 1200px){
+    .login-container{
+        grid-template-columns: 1fr;
+        overflow-x: none;
+        &__left{
+            display: none;
+        }
+        &__right{
+            padding: 40px;
+            height: 100%;
+        }
+    }
+}
+@media (max-width: 530px){
+    .login-container{
+        &__right{
+            img{
+                padding-bottom: 50px;
+            }
+            &__buttons{
+                flex-direction: column;
+            }
+            .content-center{
+                width: auto;
+            }
+        }
+    }
+}

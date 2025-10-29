@@ -9,12 +9,16 @@ const InputBase = ({label, HelperText}) => {
         <h3 className='title-field'>{label}</h3>
         <TextField id="outlined-basic" variant="outlined" fullWidth
           sx={{
+            '& .MuiInputBase-root': {
+              borderRadius: '8px'
+            },
             '& .MuiInputBase-input': {
               color: '#999',
               fontSize: '1.1rem',
               background: '#191919',
               padding: '12px',
-              height: '18px'
+              height: '18px',
+              borderRadius: '8px'
             },
             '& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline': {
               borderColor: 'initial',
