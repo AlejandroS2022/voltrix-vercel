@@ -2,7 +2,6 @@ import ChipsOutline from '../components/ui/buttons/ChipsOutline';
 import LoginContent from '../components/modules/LoginContent';
 import FooterLogin from '../components/layouts/FooterLogin';
 import ButtonsRegister from '../components/modules/ButtonsRegister';
-import ButtonColor from '../components/ui/buttons/ButtonColor';
 
 import { Link } from 'react-router-dom';
 
@@ -27,13 +26,12 @@ const TradingLogin = () => {
                 <ButtonsRegister></ButtonsRegister>
                 <hr/>
                 <LoginContent></LoginContent>
-                <ButtonColor content='Log in'></ButtonColor>
                 <p>By logging in, you agree to follow our <a href="#" className='color-link'>terms of service</a></p>
                 <p>
                     <Link to="/Forgot-password" className='color-link'>
                         Forgot password?
                     </Link>
-            </p>
+                </p>
             </div>
             <FooterLogin content="Don't have an account?" redirectText="Create Account" src="/Create-account"></FooterLogin>
         </div>

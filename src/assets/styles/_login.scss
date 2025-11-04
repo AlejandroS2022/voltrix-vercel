@@ -55,10 +55,24 @@
             width: 100%;
             border-color: $border-color;
         }
+        &__create-account-form{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
         &__create-account{
             display: flex;
-            width: 100%;
+            justify-content: space-between;
             gap: 24px;
+        }
+        &__create-account-input-group{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+        &__create-account-input-error{
+            margin-block: 0;
+            color: $error-color;
         }
         &__password{
             display: flex;

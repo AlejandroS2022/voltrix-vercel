@@ -2,7 +2,6 @@ import ChipsOutline from '../components/ui/buttons/ChipsOutline';
 import FooterLogin from '../components/layouts/FooterLogin';
 import CreateAccount from '../components/modules/CreateAccount';
 import ButtonsRegister from '../components/modules/ButtonsRegister';
-import ButtonColor from '../components/ui/buttons/ButtonColor';
 
 const CreateAccountPage = () => {
   return (
@@ -24,7 +23,6 @@ const CreateAccountPage = () => {
                 <ButtonsRegister></ButtonsRegister>
                 <hr/>
                 <CreateAccount></CreateAccount>
-                <ButtonColor content='Create Account' src="#"></ButtonColor>
                 <p>By logging in, you agree to follow our <a href="#" className='color-link'>terms of service</a></p>
             </div>
             <FooterLogin content="Already have an account?" redirectText="Log in" src="/"></FooterLogin>

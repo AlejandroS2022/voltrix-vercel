@@ -1,13 +1,13 @@
 import TextField from '@mui/material/TextField';
 
 
-const InputBase = ({label, HelperText}) => {
+const InputBase = ({type, label, HelperText, ...props}) => {
     const shouldShowHelper = HelperText;
   return (
     <>
     <div className='input-field'>
         <h3 className='title-field'>{label}</h3>
-        <TextField id="outlined-basic" variant="outlined" fullWidth
+        <TextField type={type} id="outlined-basic" variant="outlined" fullWidth {...props}
           sx={{
             '& .MuiInputBase-root': {
               borderRadius: '8px'
