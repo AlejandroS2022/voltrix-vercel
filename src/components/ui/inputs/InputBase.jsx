@@ -14,7 +14,7 @@ const InputBase = ({type, label, HelperText, ...props}) => {
             },
             '& .MuiInputBase-input': {
               color: '#999',
-              fontSize: '1.1rem',
+              fontSize: '1rem',
               background: '#191919',
               padding: '12px',
               height: '18px',

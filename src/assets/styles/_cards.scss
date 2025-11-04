@@ -1,0 +1,62 @@
+.card-info{
+    display: flex;
+    gap: 44px;
+    align-items: center;
+    background-color: $border-color-right;
+    border-radius: 8px;
+    padding: 35px;
+
+    h1, h3{
+        margin: 0;
+    }
+    h3{
+        color: white;
+        text-transform: capitalize;
+    }
+    h1{
+        color: $text-color;
+        font-weight: 400;
+    }
+}
+.card-info-user{
+    background-color: $border-color-right;
+    border-radius: 8px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    &__content{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &-avatar{
+            display: flex;
+            align-items: center;
+            gap: 12px;
+
+            h2, h4{
+                margin: 0;
+                font-weight: 400;
+            }
+            h2{
+                color: white;
+            }
+            h4{
+                color: $text-color;
+            }
+        }
+    }
+    h5{
+        font-weight: 400;
+        color: $text-color-tertiary;
+        margin: 0;
+    }
+    .positive-percentage{
+        color: $green-positive;
+    }
+    .negative-percentage{
+        color: $red-negative;
+    }
+}

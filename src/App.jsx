@@ -1,5 +1,4 @@
 import { Routes, Route } from 'react-router-dom';
-
 import TradingLogin from './pages/TradingLogin';
 import CreateAccountPage from './pages/CreateAccountPage';
 import ForgotPasswordPage from './pages/ForgotPasswordPage';
@@ -7,6 +6,11 @@ import CodeVerify from './pages/CodeVerify';
 import NewPasswordPage from './pages/NewPasswordPage';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import HomePage from './pages/HomePage';
+import HomeContent from './components/modules/HomeContent';
+import TransactionsHistory from './components/modules/TransactionsHistory';
+
+
 
 
 function App() {
@@ -18,7 +22,12 @@ function App() {
             <Route path="/Create-account" element={<CreateAccountPage />} />  
             <Route path="/Forgot-password" element={<ForgotPasswordPage />} />  
             <Route path="/Verify-code" element={<CodeVerify />} />  
-            <Route path="/New-password" element={<NewPasswordPage />} />  
+            <Route path="/New-password" element={<NewPasswordPage />} /> 
+
+            <Route element={<HomePage />} >
+              <Route path="Home" element={<HomeContent />} />
+              <Route path="Transactions-history" element={<TransactionsHistory />} />
+            </Route>              
           </Routes>
           <ToastContainer position="top-right" autoClose={3000} />
         </div>

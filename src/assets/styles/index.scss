@@ -4,6 +4,8 @@
 @import "../styles/inputs";
 @import "../styles/chips";
 @import "../styles/queries";
+@import "../styles/layouts";
+@import "../styles/cards";
 
 body {
   font-family: $font-family;
@@ -20,4 +22,50 @@ body {
 }
 .color-link{
   color: $color-blue;
+}
+.home-page{
+  width: auto;
+  height: 100vh;
+  margin-left: 100px;
+
+  &__main-content{
+    padding: 40px 16px 20px 0;
+  }
+}
+.home-content{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+
+  &__left{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  &__right{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    &-map{
+      background-color: $border-color-right;
+
+      img{
+        width: 100%;
+      }
+    }
+    &-indices{
+      &-cards{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 16px;
+      }
+    }
+    h2{
+      margin: 0;
+      padding: 24px;
+      color: white;
+      font-weight: 400;
+    }
+  }
 }
