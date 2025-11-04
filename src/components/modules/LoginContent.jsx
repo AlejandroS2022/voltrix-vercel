@@ -4,6 +4,7 @@ import * as yup from 'yup';
 import api from '../../api/axiosInstance';
 import { useDispatch } from 'react-redux';
 import { setCredentials } from '../../store/authSlice';
+import { useNavigate } from 'react-router-dom';
 import InputBase from '../ui/inputs/InputBase';
 import ButtonColor from '../../components/ui/buttons/ButtonColor';
 import { toast } from 'react-toastify';
@@ -15,6 +16,7 @@ const schema = yup.object({
 
 const LoginContent = () => {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   const {
     register,
@@ -27,6 +29,8 @@ const LoginContent = () => {
       const res = await api.post('/auth/login', data);
       dispatch(setCredentials(res.data));
       toast.success('Logged in successfully!');
+
+      navigate('/Home');
     } catch (err) {
       toast.error(err.response?.data?.error || 'Login failed');
     }
