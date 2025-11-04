@@ -5,7 +5,8 @@ import CreateAccountPage from './pages/CreateAccountPage';
 import ForgotPasswordPage from './pages/ForgotPasswordPage';
 import CodeVerify from './pages/CodeVerify';
 import NewPasswordPage from './pages/NewPasswordPage';
-
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
             <Route path="/Verify-code" element={<CodeVerify />} />  
             <Route path="/New-password" element={<NewPasswordPage />} />  
           </Routes>
+          <ToastContainer position="top-right" autoClose={3000} />
         </div>
     </>
   )
