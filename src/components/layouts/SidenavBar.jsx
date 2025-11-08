@@ -5,8 +5,24 @@ import PriceChangeRoundedIcon from '@mui/icons-material/PriceChangeRounded';
 import CreditCardRoundedIcon from '@mui/icons-material/CreditCardRounded';
 import ManageAccountsRoundedIcon from '@mui/icons-material/ManageAccountsRounded';
 import ErrorRoundedIcon from '@mui/icons-material/ErrorRounded';
+import { Link, useLocation } from 'react-router-dom';
+import { Tooltip } from '@mui/material';
+
+const navItems = [
+    { path: '/Home', icon: <HomeFilledIcon />, label: 'Home' },
+    { path: '/Transactions-history', icon: <AccountBalanceWalletRoundedIcon />, label: 'History' },
+    { path: '/Deposit', icon: <PriceChangeRoundedIcon />, label: 'Deposit' },
+    { path: '/Cards', icon: <CreditCardRoundedIcon />, label: 'Withdraw' },
+];
+
+const bottomItems = [
+    { path: '/Error', icon: <ManageAccountsRoundedIcon />, label: 'Error' },
+    { path: '/Contact-us', icon: <ErrorRoundedIcon />, label: 'Contact us' },
+];
 
 const SidenavBar = () => {
+    const location = useLocation();
+    const isActive = (path) => location.pathname === path;
   return (
     <>
     <div className="sidenav-content">
@@ -15,17 +31,40 @@ const SidenavBar = () => {
                 <img src="images/voltrix.svg" alt="voltrix Iso" />
             </div>
             <div className='sidenav-content__top-categories'>
-                <div><HomeFilledIcon /></div>
-                <div><BarChartRoundedIcon /></div>
-                <div><AccountBalanceWalletRoundedIcon /></div>
-                <div><PriceChangeRoundedIcon /></div>
-                <div><CreditCardRoundedIcon /></div>
+                {navItems.map((item) => (
+                    <Tooltip 
+                        title={item.label}
+                        placement="right"
+                        key={item.path}
+                        arrow 
+                    >
+                        <Link 
+                            to={item.path} 
+                            className={`nav-item ${isActive(item.path) ? 'active' : ''}`}
+                        >
+                            {item.icon}
+                        </Link>
+                    </Tooltip>
+                ))}
             </div>
         </div>
 
         <div className="sidenav-content__bottom">
-            <div><ManageAccountsRoundedIcon /></div>
-            <div><ErrorRoundedIcon /></div>
+            {bottomItems.map((item) => (
+                <Tooltip 
+                    title={item.label}
+                    placement="right" 
+                    key={item.path}
+                    arrow
+                >
+                    <Link 
+                        to={item.path} 
+                        className={`nav-item ${isActive(item.path) ? 'active' : ''}`}
+                    >
+                        {item.icon}
+                    </Link>
+                </Tooltip>
+            ))}
         </div>
     </div>
     </>

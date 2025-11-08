@@ -6,7 +6,9 @@ const InputBase = ({type, label, HelperText, ...props}) => {
   return (
     <>
     <div className='input-field'>
-        <h3 className='title-field'>{label}</h3>
+        {label && (
+            <h3 className='title-field'>{label}</h3>
+        )}
         <TextField type={type} id="outlined-basic" variant="outlined" fullWidth {...props}
           sx={{
             '& .MuiInputBase-root': {
@@ -31,7 +33,9 @@ const InputBase = ({type, label, HelperText, ...props}) => {
               boxShadow: '0px -0.5px 0px 0.2px gray',
             },
           }}/>
-        <p className='helper-text'>{HelperText}</p>
+        {HelperText && (
+          <p className='helper-text'>{HelperText}</p>
+        )}
     </div>
     </>
   );

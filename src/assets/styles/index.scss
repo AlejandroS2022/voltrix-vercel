@@ -15,6 +15,10 @@ body {
   width: 100%;
   height: 100%;
 }
+hr{
+  margin: 24px 0px;
+  border-color: $border-color;
+}
 .footer-content{
   display: flex;
   flex-direction: column;
@@ -67,5 +71,201 @@ body {
       color: white;
       font-weight: 400;
     }
+  }
+}
+.transactions-content{
+  
+  h1{
+    margin: 0;
+    color: white;
+  }
+
+  &__cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 16px;
+
+    .card-info{
+      padding: 24px;
+      gap: 16px;
+      
+      h3{
+        font-size: 16px;
+        font-weight: 400;
+      }
+      &__content{
+        h1{
+          font-size: 28px;
+          font-weight: 700;
+          color: $text-color;
+        }
+      }
+    }
+  }
+  &__table{
+    background-color: $border-color-right;
+    border-radius: 8px;
+
+    .MuiBox-root{
+      padding: 0;
+    }
+    .MuiButtonBase-root.MuiTab-root{
+      color: white;
+      text-transform: capitalize;
+      font-weight: 400;
+
+      &.Mui-selected{
+        color: $color-blue;
+      }
+    }
+    .MuiTabs-fixed .MuiTabs-indicator{
+      background-color: $color-blue;
+    }
+    .MuiTabs-root{
+      padding: 0px 16px;
+    }
+  }
+  &__buttons{
+    display: flex;
+    justify-content: space-between;
+    margin: 24px 0px;
+
+    &-flex{
+      display: flex;
+      gap: 12px;
+    }
+    button{
+      background-color: $border-color-right;
+      color: $text-color;
+      text-transform: capitalize;
+      border-radius: 8px;
+      padding: 10px 16px;
+      font-size: 16px;
+      box-shadow: none;
+  
+      &:hover{
+        box-shadow: none;
+      }
+    }
+  }
+}
+.table-content{
+  border-radius: 0px 0px 8px 8px !important;
+
+  table{
+    background-color: $border-color-right;
+
+    th, td{
+      color: white;
+      border-bottom: 1.5px solid $bg-color;
+    }
+    th{
+      background-color: $button-color;
+    }
+  }
+}
+.date-picker-component{
+  background-color: $border-color-right;
+  border-radius: 8px;
+  width: 160px;
+
+  .MuiPickersInputBase-sectionsContainer{
+    color: $text-color;
+    padding: 12.5px 0px;
+  }
+  .css-vycme6-MuiPickersInputBase-root-MuiPickersOutlinedInput-root.Mui-focused:not(.Mui-error) .MuiPickersOutlinedInput-notchedOutline{
+    border-color: transparent;
+  }
+  svg{
+    fill: $text-color;
+    padding: 0px;
+  }
+}
+.deposit-content{
+  display: flex;
+  flex-direction: column;
+  gap: 24px; 
+
+  h1, h2{
+    margin: 0;
+    color: white;
+  }
+  &__top{
+    padding: 32px;
+    background-color: $bg-color-deposit;
+    p{
+      color: $text-color;
+      margin: 10px 0px;
+    }
+    &-buttons{
+      padding-top: 24px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+
+      button{
+        background-color: $border-color-right;
+        color: $text-color;
+        text-transform: capitalize;
+        border-radius: 4px;
+        width: 164px;
+        padding: 10px 16px;
+        font-size: 14px;
+        box-shadow: none;
+      }
+    }
+  }
+  &__bottom{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+
+    &-left{
+      background-color: $bg-color-deposit;
+      padding: 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+
+      a.button-color{
+        margin: 0px;
+      }
+    }
+    &-right{
+      background-color: $bg-color-deposit;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 32px;
+      gap: 10px;
+      h1,p{
+        color: $text-color;
+        margin: 0;
+      }
+      h1{
+        font-weight: 400;
+      }
+    }
+
+  } 
+}
+.contact-content{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 16px;
+  
+  h1{
+    margin: 0;
+    color: white;
+    font-weight: 400;
+  }
+  h2{
+    color: $text-color;
+    margin: 0;
+  }
+  &__card{
+    background-color: $border-color-right;
+    border-radius: 8px;
+    padding: 32px;
   }
 }
