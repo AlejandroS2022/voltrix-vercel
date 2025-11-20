@@ -29,7 +29,7 @@ function DashboardPage() {
     <>        
         <div className='dashboard-content'>
             <div className='dashboard-content__left'>
-                <img src="images/leftSectionExample.png" alt="Left Section Example" />
+                <img src="/images/leftSectionExample.png" alt="Left Section Example" />
             </div>
             <div className='dashboard-content__right'>
                 <h3 className='dashboard-content__right-title'>Trade</h3>

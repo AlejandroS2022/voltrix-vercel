@@ -20,7 +20,7 @@ const NewPasswordPage = () => {
         </div>    
         <div className="login-container__right">
             <div className='content-center'>
-                <img src="images/logoWhite.png"/>
+                <img src="/images/logoWhite.png"/>
                 <NewPassword 
                     passwordTitle='Set a new password' 
                     passwordSubtitle='Create a new password. Ensure it differs from previous ones for security' 

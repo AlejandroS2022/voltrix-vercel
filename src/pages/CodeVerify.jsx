@@ -20,7 +20,7 @@ const CodeVerify = () => {
         </div>    
         <div className="login-container__right">
             <div className='content-center'>
-                <img src="images/logoWhite.png"/>
+                <img src="/images/logoWhite.png"/>
                 <ForgotPassword 
                     passwordTitle='Check you email' 
                     passwordSubtitle='We sent a reset link to you@example.com enter 5 digit code that mentioned in the email' 

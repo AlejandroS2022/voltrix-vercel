@@ -20,7 +20,7 @@ const ForgotPasswordPage = () => {
         </div>    
         <div className="login-container__right">
             <div className='content-center'>
-                <img src="images/logoWhite.png"/>
+                <img src="/images/logoWhite.png"/>
                 <ForgotPassword 
                     passwordTitle='Forgot Password' 
                     passwordSubtitle='Please enter your email to reset the password' 

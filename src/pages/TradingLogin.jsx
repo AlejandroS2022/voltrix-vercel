@@ -22,7 +22,7 @@ const TradingLogin = () => {
         </div>    
         <div className="login-container__right">
             <div className='content-center'>
-                <img src="images/logoWhite.png"/>
+                <img src="/images/logoWhite.png"/>
                 <ButtonsRegister></ButtonsRegister>
                 <hr/>
                 <LoginContent></LoginContent>

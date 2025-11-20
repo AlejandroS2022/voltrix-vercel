@@ -87,7 +87,7 @@ const SidenavBar = () => {
     <div className="sidenav-content">
         <div className="sidenav-content__top">
             <div className="sidenav-content__top-iso">
-                <img src="images/voltrix.svg" alt="voltrix Iso" />
+                <img src="/images/voltrix.svg" alt="voltrix Iso" />
             </div>
             <div className='sidenav-content__top-categories'>
                 {navItems.map((item) => (

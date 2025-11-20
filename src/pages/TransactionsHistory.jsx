@@ -34,10 +34,10 @@ const TransactionsHistory = () => {
             </div>
         </div>
         <div className="transactions-content__cards">
-          <CardInfo title='balance' src='images/DollarIcon.svg' content='$78,987.00'></CardInfo>
-          <CardInfo title='Savings' src='images/Money.svg' content='$23,000.00'></CardInfo>
-          <CardInfo title='Incomes' src='images/arrowBottom.svg' content='$28,670.00'></CardInfo>
-          <CardInfo title='Expenses' src='images/arrowTop.svg' content='$3,456.00'></CardInfo>
+          <CardInfo title='balance' src='/images/DollarIcon.svg' content='$78,987.00'></CardInfo>
+          <CardInfo title='Savings' src='/images/Money.svg' content='$23,000.00'></CardInfo>
+          <CardInfo title='Incomes' src='/images/arrowBottom.svg' content='$28,670.00'></CardInfo>
+          <CardInfo title='Expenses' src='/images/arrowTop.svg' content='$3,456.00'></CardInfo>
         </div>
         <hr />
         <div className="transactions-content__table">
