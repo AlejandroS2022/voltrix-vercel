@@ -11,6 +11,43 @@
         }
     }
 }
+@media (max-width: 1000px) {
+    .header-content__left{
+        gap: 30px !important;
+
+        &-avatar{
+            padding-right: 20px !important;
+        }
+    }
+    .dashboard-content{
+        grid-template-columns: auto !important;
+        align-items: center !important;
+        &__right{
+            max-width: 450px !important;
+        }
+    }
+}
+@media (max-width: 900px){
+    .header-mobile-mode{
+        border-bottom: 1px solid $border-color-right;
+        margin-left: 0px !important;
+    }
+    .transactions-content{
+        &__table{
+            width: 94vw;
+        }
+    }
+    .home-content{
+        grid-template-columns: auto !important;
+
+        &__left-cards{
+            .card-info{
+                gap: 16px !important;
+                padding: 24px !important;
+            }
+        }
+    }
+}
 @media (max-width: 530px){
     .login-container{
         &__right{
@@ -26,6 +63,22 @@
             &__create-account{
                 flex-direction: column;
                 gap: 0;
+            }
+        }
+    }
+    .transactions-content{
+        &__table{
+            width: 92vw;
+        }
+    }
+    .transactions-content__cards{
+        grid-template-columns: repeat(auto-fit, minmax(clamp(100px, 200px, 350px), 1fr)) !important;
+        .card-info{
+            gap: 0px !important;
+            padding: 20px !important;
+
+            &__content h1{
+                font-size: 21px !important;
             }
         }
     }

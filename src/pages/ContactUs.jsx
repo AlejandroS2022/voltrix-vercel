@@ -14,6 +14,7 @@ function ContactUs() {
             <div className="contact-content__card">
                 <h1>Email</h1>
                 <h2>service@example.com</h2>
+                <h2>service@example.com</h2>
             </div>
         </div>
     </>

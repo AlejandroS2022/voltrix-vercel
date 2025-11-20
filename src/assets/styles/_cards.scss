@@ -22,7 +22,6 @@
     background-color: $border-color-right;
     border-radius: 8px;
     padding: 24px;
-    display: flex;
     flex-direction: column;
     gap: 16px;
 
@@ -30,6 +29,8 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        flex-wrap: wrap;
+        row-gap: 16px;
 
         &-avatar{
             display: flex;
@@ -51,7 +52,7 @@
     h5{
         font-weight: 400;
         color: $text-color-tertiary;
-        margin: 0;
+        margin: 16px 0 0 0;
     }
     .positive-percentage{
         color: $green-positive;

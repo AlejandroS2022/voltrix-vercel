@@ -31,4 +31,8 @@ a,button{
         text-transform: capitalize;
         margin: 16px 0;
     }
+    &.Mui-disabled{
+        background-color: $border-color-right !important;
+        color: $text-color !important;
+    }
 }

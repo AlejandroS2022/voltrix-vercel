@@ -8,10 +8,12 @@ const HomeContent = () => {
     <div className="home-content">
       <div className="home-content__left">
         <CardInfoUser title="maiker" content='Account: 4453728992'></CardInfoUser>
-        <CardInfo title='balance' src='images/balance.svg' content='$623,098.17'></CardInfo>
-        <CardInfo title='founds' src='images/founds.svg' content='$122,912.50'></CardInfo>
-        <CardInfo title='credit' src='images/credit.svg' content='$200,098.17'></CardInfo>
-        <CardInfo title='SSA' src='images/ssa.svg' content='$580,098.17'></CardInfo>
+        <div className="home-content__left-cards">
+          <CardInfo title='balance' src='images/balance.svg' content='$623,098.17'></CardInfo>
+          <CardInfo title='founds' src='images/founds.svg' content='$122,912.50'></CardInfo>
+          <CardInfo title='credit' src='images/credit.svg' content='$200,098.17'></CardInfo>
+          <CardInfo title='SSA' src='images/ssa.svg' content='$580,098.17'></CardInfo>
+        </div>
       </div>
       <div className="home-content__right">
         <div className="home-content__right-map">

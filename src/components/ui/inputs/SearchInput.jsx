@@ -5,7 +5,7 @@ import SearchIcon from '@mui/icons-material/Search';
 
 export default function SearchInput() {
   return (
-    <Stack sx={{ width: 300 }}>
+    <Stack sx={{ width: 280}}>
       <SearchIcon className='icon-position'/>
       <Autocomplete
         id="free-solo-demo"

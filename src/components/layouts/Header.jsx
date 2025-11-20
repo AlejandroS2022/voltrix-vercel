@@ -1,7 +1,22 @@
 import { Avatar } from "@mui/material";
 import SearchInput from "../ui/inputs/SearchInput";
+import useWindowSize from './useWindowSize';
 
+const MOBILE_BREAKPOINT = 900;
 const Header = () => {
+    const { width } = useWindowSize();
+    const isMobile = width < MOBILE_BREAKPOINT;
+    if (isMobile) {
+        return (
+            <div className="header-content mobile-mode">
+                <div className="header-content__left">
+                    <div className="header-content__left-avatar">
+                        <img src="images/logoWhite.svg" alt="voltrix Iso" width={150}/>
+                    </div>
+                </div>
+            </div>
+        );
+    }
   return (
     <>
     <div className="header-content">
